@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Index</title>
+      <link rel="stylesheet" href="css/uikit.min.css">
+      <link rel="stylesheet" href="css/styles.css">
+      <script src="js/uikit.min.js"></script>
+      <script src="js/uikit-icons.min.js"></script>
+      <script src="js/jquery.min.js"></script>
+  </head>
+<body>
+
+  <!-- navbar section  -->
+  <div class="uk-position-relative" id="hide">
+
+      <nav class="uk-nav-container" style="background-color: black;" uk-sticky uk-navbar="dropbar: true" >
+  
+          <div class="uk-navbar-left ">
+  
+              <ul class="uk-navbar-nav">
+                  <li><a href="#"><img src="images/logo.png" alt=""></a></li>
+                  
+              </ul>
+  
+          </div>
+  
+          <div class="uk-navbar-right">
+  
+              <ul class="uk-navbar-nav">
+                  <li><a  href="#"><button class="uk-button uk-button-small uk-button-primary uk-border-rounded">Buy Now</button> </a></li>
+                  <li><a  href="#"><button class="uk-button uk-button-small uk-button-primary uk-border-rounded" id="remove">Remove Frame</button> </a></li>
+              </ul>
+  
+          </div>
+      </nav>
+  
+      <div class="uk-navbar-dropbar"></div>
+  
+  </div>
+  <!-- end of navbar section  -->
+<!-- <iframe src="https://www.w3schools.com">
+  <p>Your browser does not support iframes.</p>
+</iframe> -->
+
+<iframe id="inlineFrameExample"
+    title="Inline Frame Example"
+    width="100%"
+    height="600px"
+    src="https://getuikit.com/docs/utility">
+</iframe>
+
+        <!-- own javascript -->
+        <script>
+            $(document).ready(function(){
+              $("#remove").click(function(){
+                $("#hide").addClass("uk-hidden");
+              });
+            });
+            </script>
+</body>
+</html>
